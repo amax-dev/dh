@@ -17,7 +17,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Dhont/Grafik');
+    return Inertia::render('Index');
 });
 
 Route::get('/dashboard', function () {
