@@ -122,7 +122,6 @@ export default {
                                         type="text"
                                         v-model="item.lista"
                                         @change="updateDhont()"
-                                        @blur="addListe()"
                                         bottom-bar
                                         class="focus:ring-0 text-xs w-64"
 
