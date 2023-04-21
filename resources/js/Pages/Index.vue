@@ -5,7 +5,7 @@
     </div>
 
     <div class="mt-3 text-md font-semibold hover:font-medium">
-        <Link :href="route('login')">Prijavi se</Link>
+        <Link :href="route('login')">Prijavi se!</Link>
     </div>
 
     </div>
