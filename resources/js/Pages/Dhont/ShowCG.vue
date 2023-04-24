@@ -186,7 +186,7 @@ export default {
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
 
-                    <div class="flex justify-between w-full p-6">
+                    <div class="flex flex-col md:flex-row justify-between w-full p-6">
                         <div>
                             <span class="text-xl mr-1">Izbori: {{ izboriNaziv }}</span>
                         </div>
@@ -198,35 +198,27 @@ export default {
                         </div>
                     </div>
 
-                    <div class="flex p-6 bg-white border-b border-gray-200">
+                    <div class="flex px-1 py-3 bg-white border-b border-gray-200">
 
-                        <div class="ml-12 w-1/2 text-sm">
+                        <div class="mx-4 w-full text-sm">
                             <p>Vazećih listića: {{ vazecihListica }}</p>
                             <p>Cenzus: {{ Math.ceil(this.vazecihListica * 0.03) }}</p>
 
                             <div v-if="izbori.length !== 0">
                                 <h1 class="mt-3 font-bold">Raspodjela mandata</h1>
-                                <ul>
+                                
+                                <!-- <ul>
                                     <li v-for="(gl, li) in izbori" :key="li"  class="font-bold" :style="{ color: gl.boja }">
 
                                         {{ gl.lista }} - {{ gl.glasova }} ({{ (gl.glasova / vazecihListica * 100).toFixed(2) }}%) | mandat: {{ gl.mandata}}
 
                                     </li>
 
-                                </ul>
+                                </ul> -->
                             </div>
 
 
                         </div>
-
-
-                        <div class="w-1/2">
-
-                        </div>
-
-
-
-
 
                     </div>
 
@@ -254,8 +246,37 @@ export default {
                             :animateOnUpdate="true"
                             @rendered="onRender"
                         />
+                    </div>
+
+                    <div class="mx-auto w-11/12 md:w-10/12 text-sm">
+
+
+                                <table class="w-full sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5">
+                                    <thead class="text-white">
+                                        <tr class="bg-teal-400  rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
+                                            <th class="p-3 text-right">#</th>
+                                            <th class="p-3 text-left">Naziv liste</th>
+                                            <th class="p-3 text-center">Broj glasova</th>
+                                            <th class="p-3 text-center">%</th>
+                                            <th class="p-3 text-center">Broj mandata</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr v-for="(gl, li) in izbori" :key="li"
+                                            class="mb-2 sm:mb-0"
+                                        >
+                                            <td class="border-grey-light border hover:bg-gray-100 px-3 py-1 text-right">{{ li + 1 }}</td>
+                                            <td class="border-grey-light border hover:bg-gray-100 px-3 py-1">{{ gl.lista }}</td>
+                                            <td class="border-grey-light border hover:bg-gray-100 px-3 py-1 text-right">{{ gl.glasova }}</td>
+                                            <td class="border-grey-light border hover:bg-gray-100 px-3 py-1 text-right">{{ (gl.glasova / vazecihListica * 100).toFixed(2) }}%</td>
+                                            <td class="border-grey-light border hover:bg-gray-100 px-3 py-1 text-right">{{ gl.mandata}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
                     </div>
+
+                            
 
 
 
