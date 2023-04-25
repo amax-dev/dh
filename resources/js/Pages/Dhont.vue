@@ -57,7 +57,7 @@ export default {
     <AuthenticatedLayout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                <Link href="dhont/HZv6yNPc">
+                <Link href="dhont/2tE5wVVb">
                 Dhondt primjer
                 </Link>
             </h2>
