@@ -173,7 +173,7 @@ export default {
     <AuthenticatedLayout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Dhont
+                Dhondt
             </h2>
 
         </template>
@@ -202,32 +202,7 @@ export default {
                             <p>Vazećih listića: {{ vazecihListica }}</p>
                             <p>Cenzus: {{ Math.ceil(this.vazecihListica * 0.03) }}</p>
 
-                            <div v-if="iznadCenzusa.length !== 0">
-                                <h1 class="mt-3 font-bold">Raspodjela mandata</h1>
-                                <ul>
-                                    <li v-for="(gl, li) in mandati" :key="li">
-
-                                        {{ li }} - {{ iznadCenzusa[li] }}
-                                        ({{ (iznadCenzusa[li] / vazecihListica * 100).toFixed(2) }}%)
-                                        | mandata: {{ gl }}
-
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                            <div v-if="ispodCenzusa.length !== 0">
-                                <h1 class="mt-3 font-bold">Ispod cenzusa</h1>
-                                <ul>
-                                    <li v-for="(gl, li) in ispodCenzusa" :key="li">
-                                        {{ li }} - {{ gl }} ({{ (gl / vazecihListica * 100).toFixed(2) }}%)
-                                        | bez mandata
-                                    </li>
-
-                                </ul>
-
-
-                            </div>
+                            
                         </div>
 
 
@@ -266,6 +241,35 @@ export default {
                             @rendered="onRender"
                         />
 
+                    </div>
+
+                    <div>
+                        <div v-if="iznadCenzusa.length !== 0">
+                                <h1 class="mt-3 font-bold">Raspodjela mandata</h1>
+                                <ul>
+                                    <li v-for="(gl, li) in mandati" :key="li">
+
+                                        {{ li }} - {{ iznadCenzusa[li] }}
+                                        ({{ (iznadCenzusa[li] / vazecihListica * 100).toFixed(2) }}%)
+                                        | mandata: {{ gl }}
+
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div v-if="ispodCenzusa.length !== 0">
+                                <h1 class="mt-3 font-bold">Ispod cenzusa</h1>
+                                <ul>
+                                    <li v-for="(gl, li) in ispodCenzusa" :key="li">
+                                        {{ li }} - {{ gl }} ({{ (gl / vazecihListica * 100).toFixed(2) }}%)
+                                        | bez mandata
+                                    </li>
+
+                                </ul>
+
+
+                            </div>
                     </div>
 
 
