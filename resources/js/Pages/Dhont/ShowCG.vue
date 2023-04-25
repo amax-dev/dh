@@ -254,11 +254,11 @@ export default {
                                 <table class="w-full sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5">
                                     <thead class="text-white">
                                         <tr class="bg-teal-400  rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
-                                            <th class="p-3 text-right">#</th>
-                                            <th class="p-3 text-left">Naziv liste</th>
-                                            <th class="p-3 text-center">Broj glasova</th>
-                                            <th class="p-3 text-center">%</th>
-                                            <th class="p-3 text-center">Broj mandata</th>
+                                            <th class="w-1/12 p-3 text-right">#</th>
+                                            <th class="w-5/12 p-3 text-left">Naziv liste</th>
+                                            <th class="w-2/12 p-3 text-center">Broj glasova</th>
+                                            <th class="w-2/12 p-3 text-center">%</th>
+                                            <th class="w-2/12 p-3 text-center">Broj mandata</th>
                                         </tr>
                                     </thead>
                                     <tbody>

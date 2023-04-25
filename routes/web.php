@@ -25,14 +25,17 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 
+Route::middleware('auth')->group(function(){
+    
+    Route::get('/dhont',[DhontController::class,'index'])->name('dhont');
+    Route::get('/dhont/grafik',[DhontController::class,'index1'])->name('dhont.grafik');
+    Route::post('/dhont',[DhontController::class,'index'])->name('dhont.post');
+    Route::put('/dhont',[DhontController::class,'store'])->name('dhont.store');
+    Route::get('/dhont/{slug}',[DhontController::class,'show'])->name('dhont.show');
 
-Route::get('/dhont',[DhontController::class,'index'])->name('dhont');
-Route::get('/dhont/grafik',[DhontController::class,'index1'])->name('dhont.grafik');
-Route::post('/dhont',[DhontController::class,'index'])->name('dhont.post');
-Route::put('/dhont',[DhontController::class,'store'])->name('dhont.store');
-Route::get('/dhont/{slug}',[DhontController::class,'show'])->name('dhont.show');
+    Route::get('/cg',[\App\Http\Controllers\CgIzboriController::class,'show'])->name('cg');
+    Route::get('/cg/{godina}',[\App\Http\Controllers\CgIzboriController::class,'show'])->name('cg.godina');
 
-Route::get('/cg',[\App\Http\Controllers\CgIzboriController::class,'show'])->name('cg');
-Route::get('/cg/{godina}',[\App\Http\Controllers\CgIzboriController::class,'show'])->name('cg.godina');
+});
 
 require __DIR__.'/auth.php';
