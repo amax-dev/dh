@@ -58,7 +58,7 @@ export default {
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 <Link href="dhont/HZv6yNPc">
-                Dhont primjer
+                Dhondt primjer
                 </Link>
             </h2>
 

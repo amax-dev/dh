@@ -34,7 +34,7 @@ const showingNavigationDropdown = ref(false);
 
                             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                                 <NavLink :href="route('dhont')" :active="route().current('dhont')">
-                                    Dhont
+                                    Dhondt
                                 </NavLink>
                             </div>
 
