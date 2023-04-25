@@ -243,7 +243,7 @@ export default {
 
                     </div>
 
-                    <div class="w-full text-xs px-4 pb-3">
+                    <div class="w-full text-sm px-12 pb-3">
                         <div v-if="iznadCenzusa.length !== 0">
                                 <h1 class="mt-3 font-bold">Raspodjela mandata</h1>
                                 <ul>
