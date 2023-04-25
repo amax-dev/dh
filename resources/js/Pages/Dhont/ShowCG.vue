@@ -272,6 +272,14 @@ export default {
                                             <td class="border-grey-light border hover:bg-gray-100 px-3 py-1 text-right">{{ gl.mandata}}</td>
                                         </tr>
                                     </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2"  class="border-grey-light border hover:bg-gray-100 px-3 py-1 text-right">Ukupno:</td>
+                                            <td class="border-grey-light border hover:bg-gray-100 px-3 py-1 text-right font-semibold">{{ vazecihListica }}</td>
+                                            <td class="border-grey-light border hover:bg-gray-100 px-3 py-1 text-right font-semibold">100%</td>
+                                            <td class="border-grey-light border hover:bg-gray-100 px-3 py-1 text-right font-semibold" >{{ mandati }}</td>
+                                        </tr>
+                                    </tfoot>
                                 </table>
 
                     </div>
