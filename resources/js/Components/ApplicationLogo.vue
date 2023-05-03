@@ -1,5 +1,5 @@
 <template>
-    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="477.000000pt" height="91.000000pt" viewBox="0 0 477.000000 91.000000"
  preserveAspectRatio="xMidYMid meet">
 <metadata>
