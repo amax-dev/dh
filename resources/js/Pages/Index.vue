@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col min-w-full min-h-screen items-center justify-center">
     <div>
-        <img :src="'storage/img/logo.svg'" class="w-80">
+        <img :src="'storage/img/logo.svg'" class="w-84">
     </div>
 
     <div class="mt-3 text-md font-semibold hover:font-medium">
