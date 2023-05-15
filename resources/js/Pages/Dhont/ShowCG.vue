@@ -176,6 +176,7 @@ export default {
                 <Link href="/cg/2012">2012</Link>
                 <Link href="/cg/2016">2016</Link>
                 <Link href="/cg/2020">2020</Link>
+                <Link href="/cg/2023">2023</Link>
             </h2>
 
         </template>

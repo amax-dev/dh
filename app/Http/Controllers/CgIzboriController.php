@@ -301,6 +301,23 @@ dd($mandati);
                     ['lista'=>'Demokratska Crna Gora', 'skraceno'=>'DCG', 'glasova'=>51298,'boja'=> '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6),'vrsta'=>0,],
                 ],
             ],
+            '2023'=>[
+                'naziv'=>'Parlamentarni 2023',
+                'rezultat'=>[
+                    ['lista'=>'Demokratska partija socijalista', 'skraceno'=>'DPS', 'glasova'=>100000,'boja'=> '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6),'vrsta'=>0,],
+                    ['lista'=>'Bošnjačka stranka', 'skraceno'=>'BS','glasova'=>18000, 'boja'=> '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6),'vrsta'=>2,],
+                    ['lista'=>'Demokrate i URA', 'skraceno'=>'DCG-URA', 'glasova'=>40000,'boja'=> '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6),'vrsta'=>0,],
+                    ['lista'=>'NSD i DNP', 'skraceno'=>'DF', 'glasova'=>70000,'boja'=> '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6),'vrsta'=>0,],
+                    ['lista'=>'Evropa sad', 'skraceno'=>'PES', 'glasova'=>115000,'boja'=> '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6),'vrsta'=>0,],
+                    ['lista'=>'Forca i DP', 'skraceno'=>'AL', 'glasova'=>5500,'boja'=> '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6),'vrsta'=>3,],
+                    ['lista'=>'Albanski forum', 'skraceno'=>'AF', 'glasova'=>6000,'boja'=> '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6),'vrsta'=>3,],
+                    ['lista'=>'Socijaldemokratska partija', 'skraceno'=>'SDP', 'glasova'=>8000,'boja'=> '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6),'vrsta'=>0,],
+                    ['lista'=>'Socijalistička narodna partija', 'skraceno'=>'SNP', 'glasova'=>7000,'boja'=> '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6),'vrsta'=>0,],
+                    ['lista'=>'Pokret za promjene', 'skraceno'=>'PZP', 'glasova'=>6000,'boja'=> '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6),'vrsta'=>0,],
+                    ['lista'=>'Ostali', 'skraceno'=>'OST', 'glasova'=>5000,'boja'=> '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6),'vrsta'=>0,],
+                    ['lista'=>'Hrvatska građanska inicijativa', 'skraceno'=>'HGI','glasova'=>1500, 'boja'=> '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6),'vrsta'=>1,],
+                ]
+            ]
         ];
 
 
